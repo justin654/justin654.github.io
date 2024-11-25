@@ -109,3 +109,139 @@
     font-size: 14px;
     color: var(--accent);
 }
+/* Adding to previous CSS */
+
+.featured-app {
+    background: white;
+    border-radius: 30px;
+    padding: 60px;
+    margin-top: -100px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.app-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.phone-mockup {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.app-highlights {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.highlight i {
+    font-size: 24px;
+    color: var(--accent);
+}
+
+.stats-section {
+    background: var(--gradient);
+    color: white;
+    padding: 80px 0;
+    margin-top: 100px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 48px;
+    font-weight: bold;
+    display: block;
+}
+
+.stat .label {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.features-section {
+    padding: 100px 0;
+    background: var(--background);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.social-links a {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-showcase {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
